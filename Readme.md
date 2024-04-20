@@ -31,7 +31,7 @@ Open the `index.html` file in your web browser. You should now see the mini ecom
 
 The website fetches data from an API using the fetch method in JavaScript. Ensure that you have a stable internet connection to properly fetch the data.
 
-**The project has been hosted. Please click on the following link to access it**
+# The project has been hosted. Please click on the following link to access it
 
   https://rahidkhan28.github.io/Marmeto-Coding-Assessment/
 
