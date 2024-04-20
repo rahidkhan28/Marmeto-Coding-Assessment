@@ -8,7 +8,7 @@ Follow these steps to run the project on any PC:
 
 1. **Clone the Repository**: 
 
-git clone "https://github.com/rahidkhan28/Marmeto-Coding-Assessment.git"
+ git clone "https://github.com/rahidkhan28/Marmeto-Coding-Assessment.git"
 
 2. **Navigate to the Project Directory**: 
 
