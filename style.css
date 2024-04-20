@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#title-text {
+  font-size: clamp(24px, 5vw, 50px); 
+  font-weight: bold;
+  line-height: 1.2; 
+}
+@media (max-width: 600px) {
+  #title {
+    margin-top: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  #title-text {
+    font-size: clamp(20px, 8vw, 35px); 
+  }
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  overflow: hidden;
+
+  margin-top: 35px;
+  background: #F2F2F2;
+}
+
+.nav-item {
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.nav-item:hover {
+  background-color: #ddd;
+}
+
+.nav-item.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav-item {
+  margin-right: 5px;
+}
+img{
+  position: relative;
+  top: 2px;
+  height: 15px;
+  width: 15px;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.product-card {
+  width: 300px;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  border-radius: 10px;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.product-details {
+  padding: 20px;
+  width: 100%;
+}
+
+.product-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.product-vendor {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.product-price {
+  font-size: 19px;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+  right: 15px;
+}
+
+#title-vendor{
+  display: flex;
+  gap: 10px;
+  position: relative;
+  right: 15px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.discount{
+  color: red;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  margin-top: 12px;
+  text-align: center;
+  
+  position: relative;
+  right: 20px;
+}
+
+.add-to-cart button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 300px;
+}
