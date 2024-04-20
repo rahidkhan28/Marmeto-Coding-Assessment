@@ -8,7 +8,7 @@ Follow these steps to run the project on any PC:
 
 1. **Clone the Repository**: 
 
- git clone "https://github.com/rahidkhan28/Marmeto-Coding-Assessment.git"
+ git clone https://github.com/rahidkhan28/Marmeto-Coding-Assessment.git
 
 2. **Navigate to the Project Directory**: 
 
@@ -31,5 +31,8 @@ Open the `index.html` file in your web browser. You should now see the mini ecom
 
 The website fetches data from an API using the fetch method in JavaScript. Ensure that you have a stable internet connection to properly fetch the data.
 
+**The project has been hosted. Please click on the following link to access it**
+
+  https://rahidkhan28.github.io/Marmeto-Coding-Assessment/
 
 
