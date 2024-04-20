@@ -66,6 +66,12 @@ async function fetchAndDisplayProducts() {
             category.category_products.forEach((product) => {
                 // Create HTML markup for the product, including optional badge text.
                 const productBadge = product.badge_text ? `<div class="product-badge">${product.badge_text}</div>` : ''; 
+
+                // Calculate discount percentage
+                const originalPrice = parseFloat(product.compare_at_price.slice(1));
+                const currentPrice = parseFloat(product.price.slice(1));
+                const discountPercentage = Math.round(((originalPrice - currentPrice) / originalPrice) * 100);
+
                 const productHTML = `
                     <div class="product-card">
                         <div class="product-image">
@@ -80,7 +86,7 @@ async function fetchAndDisplayProducts() {
                             <div class="product-price">
                                 Rs ${product.price}
                                 <span class="original-price">${product.compare_at_price}</span>
-                                <span class="discount"> 50% Off</span>
+                                <span class="discount"> ${discountPercentage}% Off</span>
                             </div>
                             <div class="add-to-cart">
                                 <button>Add to Cart</button>
